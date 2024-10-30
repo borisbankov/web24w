@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		ul {
+			display: flex; /* елементите наследници да се подреждат в рамките на редове и колони */
+			flex-wrap: wrap; /* да се пренася на нов ред, ако няма място за даден наследник */
+			justify-content: center; /*  съдържанието във флекс да е центрирано*/
+			background: rgb(42, 102, 102); /* цвят за фон*/
+			list-style-type: none; /* премахваме булети/символи*/
+			padding: 16px 0px; /* отстояние отгоре и отдолу 16, отляво и отдясно 0 */
+		}
+
+		li {
+			padding:0px 10px;
+		}	
+
+		li:not(:last-of-type){
+			border-right: solid 3px white;
+		}
+
+		a{
+			display:inline-block; /* линк по дефолт е инлайн и не може да заема повече място от размера на текста, така в момента линка ще е като бутон с повече площ*/
+			padding:12px;
+			color: white;
+			text-decoration: none; /* премахване на подчертаването на линковете */
+			font-weight: bold;
+			font-family: Arial;
+		}
+
+		a:hover{
+			background: white;
+			color: rgb(42, 102, 102);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Service</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
