@@ -72,6 +72,68 @@
 			color:white;
 			font-weight: bold;
 		}
+		.main{
+			display: flex;
+			flex-wrap: wrap;
+			width:1200px;
+			box-sizing: border-box;
+		}
+		.main-item{
+			padding:25px 20px 75px 20px;
+			text-align: center;
+			flex:0 0 20%;
+			box-sizing: border-box;
+		}
+
+		.main-img{
+			width:62px;
+			height:62px;
+			border-radius:28px;
+			margin:0 auto;
+			padding-top:10px;
+			box-sizing: border-box;
+			box-shadow: 0px 1px 1px 1px #111111;
+		}
+		.main-item > h3{
+			text-shadow: 0px 2px 1px #444444;
+			margin-top:45px;
+			margin-bottom:30px;
+		}
+		.main-item > p{
+			color:white;
+			line-height: 1.7;
+		}
+
+		.main-item:nth-of-type(1){
+			background: #a2d6d9;
+		}
+		.main-item:nth-of-type(1) > h3{
+			color:#51a7ac;
+		}
+		.main-item:nth-of-type(2){
+			background: #f48871;
+		}
+		.main-item:nth-of-type(2) > h3{
+			color:#e8301d;
+		}
+		.main-item:nth-of-type(3){
+			background: #b9d694;
+		}
+		.main-item:nth-of-type(3) > h3{
+			color:#89b453;
+		}
+		.main-item:nth-of-type(4){
+			background: #fae17c;
+		}
+		.main-item:nth-of-type(4) > h3{
+			color:#f6c640;
+		}
+		.main-item:nth-of-type(5){
+			background: #f6b56b;
+		}
+		.main-item:nth-of-type(5) > h3{
+			color:#f07f30;
+		}
 	</style>
 </head>
 <body>
@@ -106,13 +168,40 @@
 	</div>
 	<div class="main">
 		<div class="main-item">
-			<div class="main-img">
-				<img src="" alt="">
+			<div class="main-img bg-blue">
+				<img src="https://static.thenounproject.com/png/89200-200.png" alt="" width="40px">
 			</div>
-			<h3></h3>
+			<h3>HTML</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aspernatur incidunt beatae voluptate amet iure totam exercitationem voluptatem facere, non in deleniti similique ullam, provident repellat sequi et libero! Hic.</p>
 		</div>
-		
+		<div class="main-item">
+			<div class="main-img bg-red">
+				<img src="https://static.thenounproject.com/png/3803708-200.png" alt="" width="40px">
+			</div>
+			<h3>CSS</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aspernatur incidunt beatae voluptate amet iure totam exercitationem voluptatem facere, non in deleniti similique ullam, provident repellat sequi et libero! Hic.</p>
+		</div>
+		<div class="main-item">
+			<div class="main-img bg-green">
+				<img src="https://static.thenounproject.com/png/3532081-200.png" alt="" width="40px">
+			</div>
+			<h3>TAGS</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aspernatur incidunt beatae voluptate amet iure totam exercitationem voluptatem facere, non in deleniti similique ullam, provident repellat sequi et libero! Hic.</p>
+		</div>
+		<div class="main-item">
+			<div class="main-img bg-yellow">
+				<img src="https://static.thenounproject.com/png/3805888-200.png" alt="" width="40px">
+			</div>
+			<h3>SNIPPETS</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aspernatur incidunt beatae voluptate amet iure totam exercitationem voluptatem facere, non in deleniti similique ullam, provident repellat sequi et libero! Hic.</p>
+		</div>
+		<div class="main-item">
+			<div class="main-img bg-orange">
+				<img src="https://static.thenounproject.com/png/1489354-200.png" alt="" width="40px">
+			</div>
+			<h3>HYPERLINKS</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aspernatur incidunt beatae voluptate amet iure totam exercitationem voluptatem facere, non in deleniti similique ullam, provident repellat sequi et libero! Hic.</p>
+		</div>
 	</div>
 </body>
 </html>
