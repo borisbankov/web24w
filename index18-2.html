@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.typekit.net/zpy8rod.css">
+	<style>
+		body{
+			margin:0px;
+			font-family:myriad-pro, 'Rockwell', sans-serif;
+		}
+		.container{
+			width:950px;
+			margin:0 auto;
+		}
+		.nav{
+			background: #63523e;
+			border-bottom: solid 12px #a56c97;
+			height:65px;
+			padding-top:15px;
+			box-sizing: border-box;
+		}
+		.menu{
+			list-style-type:none;
+			margin:0px;
+			padding:0px 0px 0px 16px;
+		}
+		.menu-item{
+			display:inline-block;
+			vertical-align: middle;
+		}
+		.menu-link{
+			padding:10px;
+			color:white;
+			text-decoration:none;
+			font-family:myriad-pro;
+		}
+
+		.main{
+			background: rgb(122,107,74);
+			background: linear-gradient(180deg, rgba(122,107,74,1) 0%, rgba(61,55,39,1) 36%, rgba(36,32,23,1) 36%, rgba(36,32,23,1) 100%);
+		}
+
+		.page-title{
+			padding-top:20px;
+			padding-left:5px;
+		}
+
+		.page-title h1, .page-title img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.page-title h1{
+			color:white;
+			font-weight:normal;
+			margin-left:10px;
+		}
+
+		.slider{
+			background: #a56c97;
+			border-radius:10px;
+			padding:10px;
+		}
+
+		.left-arrow, .slide-item, .right-arrow{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.left-arrow{
+			width:0;
+			height:0;
+			border-top:solid 10px transparent;
+			border-bottom:solid 10px transparent;
+			border-right:solid 10px #6c4562;
+		}
+
+		.right-arrow{
+			width:0;
+			height:0;
+			border-top:solid 10px transparent;
+			border-bottom:solid 10px transparent;
+			border-left:solid 10px #6c4562;
+		}
+
+		.slide-item{
+			width:870px;
+			padding-left:15px;
+			padding-right:15px;
+		}
+
+		.slide-title{
+			color:#fae3af;
+			font-size:30px;
+			font-family:myriad-pro;
+		}
+
+		.slide-subtitle{
+			font-size:14px;
+			font-family:myriad-pro;
+			font-weight:bold;
+			border-top:solid 2px #784b72;
+			border-bottom:solid 2px #784b72;
+			padding:2px 3px;
+		}
+		.slide-body{
+			color:white;
+			font-family:'Rockwell';
+			padding-top:10px;
+		}
+
+		.articles{
+			border:solid 2px #3f0e2b;
+			background:#201c19;
+			padding-top:25px;
+			padding-left:23px;
+			margin-top:24px;
+		}
+
+		.popular, .comments, .livestream{
+			width:270px;
+			display:inline-block;
+			vertical-align: top;
+		}
+		.section-title{
+			color:#fae3af;
+			font-size:26px;
+			margin-bottom:15px;
+		}
+
+		.article-item{
+			margin-bottom:16px;
+		}
+		.article-title{
+			color:#705a66;
+			margin-bottom:9px;
+			font-size:20px;
+			font-family:Times;
+		}
+		.article-subtitle{
+			font-size:12px;
+			font-family:myriad-pro;
+			font-weight:normal;
+			border-top:solid 2px #422239;
+			border-bottom:solid 2px #422239;
+			padding:2px 3px;
+			color:#492d3b;
+		}
+		.article-body{
+			padding:7px 2px;
+		}
+		.article-text{
+			color:#a6919a;
+			width:176px;
+			height:80px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size:12px;
+			line-height:1.5;
+		}
+		.article-body img, .article-text{
+			display:inline-block;
+			vertical-align: middle;
+		}
+		.article-body img{
+			border:solid 2px #3f0e2b;
+		}
+		.comments .section-heading{
+			margin-bottom:25px;
+		}
+		.comments{
+			margin-left:55px;
+		}
+
+		.comments-item{
+			margin-bottom:18px;
+		}
+		.comments-icon{
+			width:23px;
+			height:23px;
+			background:#e83435;
+			color:white;
+			text-align:center;
+			margin-right:6px;
+		}
+		.comments-user{
+
+			padding-bottom:2px;
+			font-size:16px;
+			color:#705a66;
+			font-family:Times;
+		}
+		.comments-user>span{
+			color:#a6919a;
+		}
+		.comments-icon, .comments-user{
+			display:inline-block;
+			vertical-align: bottom;
+		}
+		.comments-body{
+			line-height:1.5;
+			margin-top:7px;
+			border-top:solid 2px #422239;
+			padding-top:3px;
+			margin-bottom:18px;
+			font-family:'Rockwell';
+			font-size:12px;
+			color:#a6919a;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width:263px;
+			height:44px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="container">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="" class="menu-link">about</a>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">contact</a>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">portfolio</a>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">quote</a>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">products</a>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">testimonials</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<div class="page-title">
+				<img src="https://placehold.co/80x50" alt="">
+				<h1>ИУ - Варна</h1>
+			</div>
+
+			<div class="slider">
+				<div class="left-arrow"></div>
+				<div class="slide-item">
+					<div class="slide-title">
+						Maecenas scelerisque fermentum metus
+					</div>
+					<div class="slide-subtitle">
+						Posted by admin in on 09 30th, 2018| 2 Comments
+					</div>
+					<div class="slide-body">
+						Pellentesque ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quasi in. Numquam cum porro corporis, explicabo quisquam molestiae eius temporibus aspernatur molestias in, blanditiis voluptate quo, at rem. Quasi, explicabo? s voluptate quo, at rem. Quasi, explicabo?
+					</div>
+				</div>
+				<div class="right-arrow"></div>
+			</div>
+
+			<div class="articles">
+				<div class="row">
+					<div class="popular">
+						<div class="section-title">
+							POPULAR ARTICLES
+						</div>
+						<div class="article-item">
+							<div class="article-title">
+								Maecenas scelerisque fermentur.
+							</div>
+							<div class="article-subtitle">
+								Posted by admin in on 09 30th, 2018| 2 Comments
+							</div>
+							<div class="article-body">
+								<img src="https://placehold.co/80x80" alt="">
+								<div class="article-text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam hic adipisci aliquam libero id assumenda officiis magni, pariatur nihil eligendi expedita vel repellendus aut unde! Recusandae, quas autem ab sit?
+								</div>
+							</div>
+						</div>
+						<div class="article-item">
+							<div class="article-title">
+								Maecenas scelerisque fermentur.
+							</div>
+							<div class="article-subtitle">
+								Posted by admin in on 09 30th, 2018| 2 Comments
+							</div>
+							<div class="article-body">
+								<img src="https://placehold.co/80x80" alt="">
+								<div class="article-text">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam hic adipisci aliquam libero id assumenda officiis magni, pariatur nihil eligendi expedita vel repellendus aut unde! Recusandae, quas autem ab sit?
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments">
+						<div class="section-title">
+							RECENT COMMENTS
+						</div>	
+						<div class="comments-item">
+							<div class="comments-icon">+</div>
+							<div class="comments-user">Maecenas <span>says</span></div>
+							<div class="comments-body">Pallentesque Lorem ipsum dolor sit amet, mipsum dolor sit amet, m ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis quis ipsum </div>
+						</div>
+						<div class="comments-item">
+							<div class="comments-icon">+</div>
+							<div class="comments-user">Maecenas <span>says</span></div>
+							<div class="comments-body">Pallentesque Lorem ipsum dolor sit amet, mipsum dolor sit amet, m ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis quis ipsum </div>
+						</div>
+						<div class="comments-item">
+							<div class="comments-icon">+</div>
+							<div class="comments-user">Maecenas <span>says</span></div>
+							<div class="comments-body">Pallentesque Lorem ipsum dolor sit amet, mipsum dolor sit amet, m ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis quis ipsum </div>
+						</div>
+					</div>
+					<div class="livestream">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
