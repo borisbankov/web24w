@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html, body{
+	font-family: 'Lato';
+	font-weight: normal;
+	margin:0px;
+}
+.bg-nav{
+	background: #3a454b;
+	height:150px;
+	box-sizing: border-box;
+	padding-top:50px;
+}
+.container{
+	width:1170px;
+	margin:0 auto;
+}	
+.d-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	align-items:center;
+}
+.site-name{
+	color:white;
+	font-size:24px;
+}
+.text-blue{
+	color:#4bcaff;
+}
+.nav{
+	list-style-type: none;
+	padding-left:0;
+	margin:0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.nav-item{
+
+}
+.nav-link{
+ 	text-decoration: none;
+ 	color:white;
+ 	height:45px;
+ 	box-sizing: border-box;
+ 	padding-left:20px;
+ 	padding-right:20px;
+ 	padding-top:11px;
+ 	display: inline-block;
+ 	border:solid 3px #3a454b;
+}
+.active, .nav-link:hover{
+	border:solid 3px #4bcaff;
+}
+.bg-img-overlay{
+	filter: grayscale(50%) sepia(60%) brightness(80%) hue-rotate(180deg);
+	background: url('https://i.ibb.co/DY3DptD/photo.jpg');
+	height:1050px;
+	padding-top:250px;
+}
+.title-1{
+	font-size:35px;
+	color:white;
+	background: rgba(41, 49, 53, 0.8);
+	width:713px;
+	height:65px;
+	box-sizing: border-box;
+	text-align: center;
+	margin:0 auto;
+	padding-top:10px;
+	margin-bottom:12px;
+}
+
+.title-2{
+	font-size:35px;
+	color:white;
+	background: rgba(41, 49, 53, 0.8);
+	width:990px;
+	height:65px;
+	box-sizing: border-box;
+	text-align: center;
+	margin:0 auto;
+	padding-top:10px;
+}
+

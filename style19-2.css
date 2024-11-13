@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html, body{
+	font-family: 'Lato';
+	font-weight: normal;
+	margin:0px;
+}
+.bg-nav{
+	background: #3a454b;
+}
+.container {
+	width:1170px;
+	margin: 0 auto;
+}
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar{
+	justify-content: space-between;
+	align-items: center;
+	padding:55px 0px;
+}
+.site-title{
+	color:white;
+	font-size:24px;
+}
+.text-blue{
+	color:#4bcaff;
+}
+.nav{
+	list-style-type: none;
+	padding-left:0;
+	margin:0;
+}
+.nav-item{
+
+}
+.nav-link {
+	text-decoration: none;
+	color:white;
+	display: inline-block;
+	padding: 10px 20px;
+	border:solid 3px #3a454b;
+}
+.active, .nav-link:hover{
+	border:solid 3px #4bcaff;
+	color: #4bcaff;
+}
+
+.bg-img-overlay:before{
+	filter: grayscale(50%) sepia(60%) brightness(80%) hue-rotate(180deg);
+	background: url('https://i.ibb.co/DY3DptD/photo.jpg');
+	position: absolute;
+	z-index:-1;
+	height:100%;
+	width:100%;
+	content:"";
+	top:0;
+	left:0;
+}
+.bg-img-overlay{
+	position: relative;
+	height:1050px;
+	padding-top:250px;
+	box-sizing: border-box;
+}
+.box-gray{
+	color:white;
+	text-align:center;
+	margin:0 auto;
+	font-size:35px;
+	padding:10px 0px;
+	background:rgba(39, 46, 49, 0.7);
+}
+.title-1{
+	width:713px;
+	margin-bottom:12px;
+}
+.title-2{
+	width:990px;
+}
+.bg-services{
+	margin-top:260px;
+	background: #4bcaff;
+	padding:80px 0px 75px 0px;
+	color:white;
+}
+.services-title{
+	font-size:28px;
+	margin-bottom:100px;
+}
+.underline{
+	border-bottom: solid 2px white;
+	display: inline-block;
+	padding-bottom:8px;
+}
+.service-item{
+	flex:0 0 25%;
+	box-sizing: border-box;
+}
+.service-item:not(.service-item:last-of-type){
+	padding-right:40px;
+}
+.service-item-title{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.service-item-text{
+
+}
+
+.portfolio{
+	padding-top:80px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.port-nav{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin:0;
+	padding: 0px;
+}
+.port-nav-item{
+	margin:0px 15px;
+}
+.port-nav-item:first-of-type{
+	margin-left:0px;
+}
+.port-nav-item:last-of-type{
+	margin-right:0px;
+}
+.port-nav-link{
+	color:#6b6c6e;
+	text-decoration: none;
+	display: inline-block;
+	padding:5px 15px;
+}
+.portfolio-title{
+	color:#6b6c6e;
+	font-size:24px;
+
+}
+
+.portfolio-underline{
+	border-bottom:solid 2px #6b6c6e;
+	display: inline-block;
+	padding-bottom:8px;
+}
